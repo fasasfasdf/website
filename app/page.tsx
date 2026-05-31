@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { SparklesCursor } from "@/components/sparkles-cursor"
+import { DevMenu } from "@/components/dev-menu"
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -34,6 +35,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black cursor-none overflow-hidden">
       <SparklesCursor />
+      <DevMenu />
       
       {/* Subtle top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-radial from-zinc-800/20 via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
