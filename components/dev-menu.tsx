@@ -88,7 +88,8 @@ export function DevMenu() {
   // Q key listener
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key === "q" || e.key === "Q") {
+      if ((e.key === "q" || e.key === "Q") && !isOpen) {
+  e.preventDefault()
         setIsOpen(!isOpen)
       }
     }
